@@ -1,6 +1,6 @@
 # Maintainer: Kent Hou Man <knthmn0 at gmail dot com>
 pkgname=resticprofile-bin
-pkgver=0.27.0
+pkgver=0.27.1
 pkgrel=1
 pkgdesc="Configuration profiles for restic backup. Pre-compiled"
 arch=('x86_64' 'aarch64' 'armv6h' 'armv7h')
@@ -17,10 +17,10 @@ source_aarch64=("https://github.com/creativeprojects/resticprofile/releases/down
 source_armv6h=("https://github.com/creativeprojects/resticprofile/releases/download/v${pkgver}/resticprofile_${pkgver}_linux_armv6.tar.gz")
 source_armv7h=("https://github.com/creativeprojects/resticprofile/releases/download/v${pkgver}/resticprofile_${pkgver}_linux_armv7.tar.gz")
 
-sha256sums_x86_64=('643113a5f793f70320c098de0652fbc412626c7f2c654d14fef8855bf54d43f2')
-sha256sums_aarch64=('81ae5edb4bded44f04c93c446c08d5f2fad2f25316065574099c5139e1c99a05')
-sha256sums_armv6h=('4e575d9ea2f1703f3be428d7023fc3d449d2cc6422f5fd37d6686ba29bd62d3e')
-sha256sums_armv7h=('98156034e2193bc0c5cc863c6d5bcb36442018d823cda25e58d5d8156577f212')
+sha256sums_x86_64=('04429ce982cef135fda595c81f1226e3ac6efd72c7c759bf5804bbb38841d70b')
+sha256sums_aarch64=('047660853a89d6431dfd7964d7fd43810c9f6856b68ac8f1c6c41f74988f9baf')
+sha256sums_armv6h=('6cf11415c6f975a4682a5a9d3587ec5a45e8f0014a02c29338c95795095acef5')
+sha256sums_armv7h=('5ad0efa4c5888361b28a0a6e9aab86ebde59594fdc76b0d6b3ff4e27ae9603d5')
 
 package() {
   install -Dm755 "${srcdir}/resticprofile" "${pkgdir}/usr/bin/resticprofile" 
